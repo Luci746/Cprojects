@@ -51,21 +51,21 @@ void freeTree(struct Node* root) {
 void inOrder(struct Node* root) {
 
   if(root != NULL) {
-    inOrder(root->left); // Percorre subarvore esquerda
-    printf("%d\n", root->value); // imprime subarvore esquerda
-    inOrder(root->right); // percorre subarvore direita
+    inOrder(root->left); // for the left subtree
+    printf("%d\n", root->value); // print the value
+    inOrder(root->right); // for the right subtree
   }
 
 }
 
-// função principal
+// main function
 int main(){
   
   struct Node* root;
   root = NULL;
 
 
-  // inserindo valores na arvore
+  // insert values in the tree
   insert(root, 10);
   insert(root, 20);
   insert(root, 40);
