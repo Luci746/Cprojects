@@ -3,3 +3,5 @@
 *.exe
 *.vscode
 
+# subdirectories ignored to git
+.vscode/
